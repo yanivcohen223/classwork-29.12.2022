@@ -15,7 +15,7 @@ app.use(express.urlencoded({
     extended: true
 }))
 
-
+app.use(express.static(path.join('.' , '/')))
 
 app.get('/movie' , (req, resp) => {
     resp.writeHead(201);
